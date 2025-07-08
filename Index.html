@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>problem will never last forever</title>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <h3>Ak bar na parlle dako shotobar</h3>
-    <img width="300px" src="images/photo.avif" alt="">
-    <img width="300px" src="images/photo-1751207357973-d05855774f24.avif" alt="">
-
-    
+  <h1>My Photo Gallery</h1>
+  <div class="gallery">
+    <img src="images/photo.avif" alt="Photo 1">
+    <img src="images/photo-1751207357973-d05855774f24.avif" alt="Photo 2">
+  </div>
 </body>
 </html>
